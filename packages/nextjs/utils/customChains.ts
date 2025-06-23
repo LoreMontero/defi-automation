@@ -28,3 +28,14 @@ export const baseSepolia = defineChain({
     },
   },
 });
+
+export const baseFork = defineChain({
+  id: 8453,
+  name: "baseFork",
+  nativeCurrency: { name: "Forked Base", symbol: "ETH", decimals: 18 },
+  rpcUrls: {
+    default: {
+      http: ["https://mainnet.base.org"],
+    },
+  },
+});
