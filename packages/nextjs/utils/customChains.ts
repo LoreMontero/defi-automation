@@ -1,22 +1,22 @@
 import { defineChain } from "viem";
 
 // Base chain
-export const base = defineChain({
-  id: 8453,
-  name: "Base",
-  nativeCurrency: { name: "Base", symbol: "ETH", decimals: 18 },
-  rpcUrls: {
-    default: {
-      http: ["https://mainnet.base.org"],
-    },
-  },
-  blockExplorers: {
-    default: {
-      name: "Basescan",
-      url: "https://basescan.org",
-    },
-  },
-});
+// export const base = defineChain({
+//   id: 8453,
+//   name: "Base",
+//   nativeCurrency: { name: "Base", symbol: "ETH", decimals: 18 },
+//   rpcUrls: {
+//     default: {
+//       http: ["https://mainnet.base.org"],
+//     },
+//   },
+//   blockExplorers: {
+//     default: {
+//       name: "Basescan",
+//       url: "https://basescan.org",
+//     },
+//   },
+// });
 
 export const baseSepolia = defineChain({
   id: 84532,
@@ -31,11 +31,11 @@ export const baseSepolia = defineChain({
 
 export const baseFork = defineChain({
   id: 8453,
-  name: "baseFork",
+  name: "BaseFork",
   nativeCurrency: { name: "Forked Base", symbol: "ETH", decimals: 18 },
   rpcUrls: {
     default: {
-      http: ["https://mainnet.base.org"],
+      http: ["https://base-mainnet.g.alchemy.com/v2/rT55BM4OEEI-4a6iH6N8U"],
     },
   },
 });
